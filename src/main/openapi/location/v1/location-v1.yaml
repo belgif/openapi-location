@@ -24,9 +24,9 @@ components:
       description: >
         Post code (a.k.a postal code, zip code etc.) of a location in Belgium.
         The post code is an identification of a grouping of addresses in a geographical area for postal purposes
-        The list of codes is maintained by https://www.bpost.be/fr/outil-de-validation-de-codes-postaux[BPost],
+        The list of codes is maintained by [BPost](https://www.bpost.be/fr/outil-de-validation-de-codes-postaux),
         the Belgian postal service, and is available as
-        https://data.europa.eu/data/datasets/https-www-odwb-be-explore-dataset-postal-codes-belgium-[open dataset].
+        [open dataset](https://data.europa.eu/data/datasets/https-www-odwb-be-explore-dataset-postal-codes-belgium-).
       type: integer
       format: int32
       minimum: 1000
