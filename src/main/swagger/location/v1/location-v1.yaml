@@ -26,6 +26,7 @@ definitions:
       the Belgian postal service, and is available as
       https://data.europa.eu/data/datasets/https-www-odwb-be-explore-dataset-postal-codes-belgium-[open dataset].
     type: integer
+    format: int32
     minimum: 1000
     maximum: 9999
   BelgianRegionCode:
