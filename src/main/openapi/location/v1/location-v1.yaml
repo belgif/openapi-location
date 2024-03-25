@@ -21,13 +21,19 @@ components:
       minimum: 10000
       maximum: 99999
     BelgianPostCode:
+      description: >
+        Post code (a.k.a postal code, zip code etc.) of a location in Belgium.
+        The post code is an identification of a grouping of addresses in a geographical area for postal purposes
+        The list of codes is maintained by https://www.bpost.be/fr/outil-de-validation-de-codes-postaux[BPost],
+        the Belgian postal service, and is available as
+        https://data.europa.eu/data/datasets/https-www-odwb-be-explore-dataset-postal-codes-belgium-[open dataset].
       type: integer
       minimum: 1000
       maximum: 9999
     BelgianRegionCode:
       description: Belgian Region represented by an ISO 3166-2:BE code
       type: string
-      enum: 
+      enum:
         - BE-BRU
         - BE-WAL
         - BE-VLG
