@@ -16,10 +16,10 @@ jobs:
         java-version: '21'
         cache: maven
         server-id: ossrh
-        server-username: ${{ secrets.OPENAPI_OSSRH_USERNAME }}
-        server-password: ${{ secrets.OPENAPI_OSSRH_TOKEN }}
+        server-username: OPENAPI_OSSRH_USERNAME
+        server-password: OPENAPI_OSSRH_TOKEN
         gpg-private-key: ${{ secrets.OPENAPI_OSSRH_GPG_SECRET_KEY }}
-        gpg-passphrase: ${{ secrets.OPENAPI_OSSRH_GPG_SECRET_KEY_PASSWORD }}
+        gpg-passphrase: OPENAPI_OSSRH_GPG_SECRET_KEY_PASSWORD
     - name: Set release version in pom.xml
       run: |
          VERSION=${GITHUB_REF_NAME:1}
