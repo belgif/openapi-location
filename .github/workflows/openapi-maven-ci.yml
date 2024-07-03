@@ -1,20 +1,10 @@
-# Maven CI build for the belgif openapi projects
 name: openapi-maven-ci
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - name: Set up Adopt OpenJDK 21
-      uses: actions/setup-java@v4
-      with:
-        distribution: adopt
-        java-version: '21'
-        cache: maven
-    - name: Build with Maven
-      run: mvn -B package
+    uses: belgif/workflows/.github/workflows/openapi-ci-workflow.yml@main
